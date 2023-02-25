@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 1</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <fieldset style="width: 700px;">
+        <legend>Dados pessoais</legend>
+        <label>Nome: <input type="text"></label><br>
+        <p><label>Data de nascimento: <input type="text"></label><br></p>
+        <p><label>Endereço: <input type="text"></label></p>
+        <label>Bairro: <input type="text"></label>
+        <label>Cidade: <input type="text"></label>
+        <label>Estado: <select name="estado">
+                <option value="ce">Ceará</option>
+                <option value="pi">Piauí</option>
+                <option value="pa">Paraíba</option>
+            </select>
+        </label>
+    </fieldset>
+
+    <fieldset style="width: 700px;">
+        <legend>Dados profissionais</legend>
+        <label>Natureza do Cargo</label>
+        <p><input type="radio" name="cargo" value="1" checked />Gerência
+            <input type="radio" name="cargo" value="2" />Financeiro
+            <input type="radio" name="cargo" value="3" />Recepção
+            <input type="radio" name="cargo" value="4" />Administrativo
+            <input type="radio" name="cargo" value="5" />Jurídico
+        </p>
+
+        <label>Área de interesse</label>
+        <p>
+            <input type="checkbox" name="area1" value="com" />Computação
+            <input type="checkbox" name="area2" value="qui" />Química
+            <input type="checkbox" name="area3" value="meio" />Meio Ambiente
+            <input type="checkbox" name="area4" value="eng" />Engenharia
+            <input type="checkbox" name="area5" value="mat" />Matemática
+        </p>
+
+        <label for="story">Mini-Currículo:</label>
+        <br><textarea id="story" name="story" rows="5" cols="45">
+    </textarea><br>
+    </fieldset>
+
+    <p><button type="button">Enviar</button>
+        <button type="button">Limpar</button>
+    </p>
+</body>
+
+</html>
